@@ -39,7 +39,7 @@ function aleatorio(min,max){
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 function eleccionMaestroEnemigo(){
-    let seleccionAleatoria = aleatorio (2,2)
+    let seleccionAleatoria = aleatorio (1,4)
     if (seleccionAleatoria == 1){
         spanMaestroEnemigo.innerHTML = "Katara"
        maestroEnemigo = "Katara"
@@ -72,30 +72,22 @@ function selecionarMaestro(){
     let zonaDeMaestros = document.getElementById ("seleccionDeMaestro")
     zonaDeMaestros.style.display = "none"
     let zonaDeAtaque = document.getElementById("seleciona-ataque")
-    zonaDeAtaque.style.display = "block"
+    zonaDeAtaque.style.display = "flex"
 } 
 function elecionDeMaestro(){
     if ( inputKatara.checked){
         resultado = "Katara"
      spanMaestroJugador.innerHTML = "Katara"
-     botonAire.disabled = true
-     botonTierra.disabled = true
-    botonFuego.disabled = true
     } else if (inputAang.checked){
         resultado ="Aang"
         spanMaestroJugador.innerHTML ="Aang"
     } else if (inputBumi.checked){
         resultado ="Bumi"
         spanMaestroJugador.innerHTML = "Bumi"
-        botonAire.disabled = true
-        botonAgua.disabled = true
-        botonFuego.disabled = true
     } else if (inputZuko.checked){
         resultado ="Zuko"
         spanMaestroJugador.innerHTML ="Zuko"
-        botonAire.disabled = true
-        botonAgua.disabled = true
-        botonTierra.disabled = true
+
     } else {
         resultado = "Escoge un Maestro"
         botonAire.disabled = true

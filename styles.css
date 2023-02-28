@@ -2,7 +2,8 @@
 
 body{
     background-color:#EDF1D6 ;
-    
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./assets/fondo.jpg);
 }
 .title{
     font-family: 'Tilt Neon', cursive;
@@ -20,25 +21,32 @@ body{
 }
 .subtitulo{
     font-family: 'Shantell Sans', cursive;
-    margin: 63px 10px 90px 10px;
+    margin: 14px 10px 30px 10px;
 }
+#seleccionDeMaestro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
 .tarjeta-maestro {
     font-family: 'Tilt Neon', cursive;
     width: 190px;
-    height: 37px;
+    height: 122px;
     background-color: #609966;
     margin: 8px;
     border: 1px black solid;
     border-radius: 10px;
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .tarjeta-maestro img{
     width: 120px;
 }
-div{
+.boton-maestro{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -48,7 +56,7 @@ input {
     width: 16px;
     height: 31px;
 }
-button {
+#boton-maestro {
     font-family: 'Poppins', sans-serif;
     width: 141px;
     height: 32px;
@@ -57,21 +65,44 @@ button {
     background-color: #40513B;
     border-radius: 20px;
 }
-#seleccionDeMaestro {
-    display: flex;
+
+#seleciona-ataque{
     flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
-#seleciona-ataque{
-    font-family: 'Tilt Neon', cursive;display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #9DC08B;
-    box-sizing: border-box;
-    padding-inline: 26px;
-    border: 1px solid black;
-    height: 201px;
-    width: 288px;
-    border-radius: 31px;
+#botonAire{
+    font-family: 'Poppins', sans-serif;
+    width: 50px;
+    height: 32px;
+    color: aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #8fd3d8;
+}
+#botonAgua{
+    font-family: 'Poppins', sans-serif;
+    width: 50px;
+    height: 32px;
+    color: aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #3b78d3;
+}
+#botonTierra{
+    font-family: 'Poppins', sans-serif;
+    width: 50px;
+    height: 32px;
+    color: aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #58441d;
+}
+#botonFuego{
+    font-family: 'Poppins', sans-serif;
+    width: 50px;
+    height: 32px;
+    color: aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #eb7c22d7;
 }
