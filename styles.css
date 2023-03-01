@@ -105,3 +105,11 @@ input {
     margin: 10px;
     background-color: #eb7c22d7;
 }
+#resultado{
+    background-color: #609966;
+    width: 190px;
+    height: 122px;
+    margin: 8px;
+    border: 1px black solid;
+    border-radius: 5px;
+}

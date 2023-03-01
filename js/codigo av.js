@@ -147,6 +147,23 @@ function vidasFinal(){
 function restart(){
     location.reload()
 }
+function mensajeCombate (combateResultado){
+    let mensaje = document.getElementById("resultado")
+    let mensajeJugador = document.getElementById("ataque-jugador")
+    let mensajeEnemigo = document.getElementById("ataque-enemigo")
+
+    // let notifacion = document.createElement ('p')
+    let eleccionJugador = document.createElement ('p')
+    let eleccionEnemigo = document.createElement ('p')
+
+    mensaje.innerHTML = combateResultado
+    eleccionJugador.innerHTML = ataqueJugador
+    eleccionEnemigo.innerHTML = ataqueEnemigoResultado
+
+    // mensaje.appendChild (notifacion)
+    mensajeJugador.appendChild (eleccionJugador)
+    mensajeEnemigo.appendChild (eleccionEnemigo)
+}
 // resultado de combate
 function crearMensajeFinal(resultadoFinal){
     let seccionMensaje = document.getElementById ('mensajes')
@@ -161,11 +178,4 @@ function crearMensajeFinal(resultadoFinal){
     botonAgua.disabled = true
     botonTierra.disabled = true
     botonFuego.disabled = true
-}
-
-function mensajeCombate (combateResultado){
-    let seccionMensaje = document.getElementById("mensajes")
-    let parrafo = document.createElement ('p')
-    parrafo.innerHTML ="Tú maestro atacó con " + ataqueJugador + " y el maestro enemigo " + maestroEnemigo + " ataco con " + ataqueEnemigoResultado + " : " + combateResultado
-    seccionMensaje.appendChild (parrafo)
 }
